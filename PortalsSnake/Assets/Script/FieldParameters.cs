@@ -3,7 +3,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using Interfaces.RedactorAddObjectsState;
 
-
+[ExecuteInEditMode]
 public class FieldParameters : MonoBehaviour,IChangeFieldSizeListener,IRedactorAddObjectOwner {
 	
 	
@@ -25,7 +25,7 @@ public class FieldParameters : MonoBehaviour,IChangeFieldSizeListener,IRedactorA
 			DrawField();
 		}
 	}
-	
+	[ExecuteInEditMode]
     void DrawField()
     {
 		FieldWidth = SettingsClass.FieldCellWidth*SettingsClass.CellSize;
