@@ -2,8 +2,8 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Snake'sScripts\SnakeMoving.cs">
     <Files>
-      <File FileName="Assets\Snake'sScripts\SnakeMoving.cs" Line="103" Column="64" />
-      <File FileName="Assets\Snake'sScripts\SnakeElement.cs" Line="24" Column="48" />
+      <File FileName="Assets\Snake'sScripts\SnakeMoving.cs" Line="95" Column="40" />
+      <File FileName="Assets\Snake'sScripts\SnakeElement.cs" Line="23" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

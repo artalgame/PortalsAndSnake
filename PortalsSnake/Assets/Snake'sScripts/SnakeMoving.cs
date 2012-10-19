@@ -92,14 +92,17 @@ public class SnakeMoving : MonoBehaviour {
 		
 		if(Time.fixedTime-LastUpdateTime>=TimeBetweenChangeDirection)
 		{
+			Body[Body.Count-1].UpdatePosition();
 			for(int i = Body.Count-1;i>=1;i--)
 			{
 				var element = Body[i];
 				float speed = Speed;
+				Body[i-1].UpdatePosition();
 				Vector3 target = Body[i-1].Element.transform.localPosition;
 				Vector3 direction = Body[i-1].Direction; 
 				element.Update(speed, target,direction);
 			}
+			Head.UpdatePosition();
 		    Body[0].Update(Speed,Head.Element.transform.localPosition,Head.Direction);
 		    Head.Update(Speed,Head.Element.transform.localPosition+Direction*Speed*TimeBetweenChangeDirection,Direction);
 		    LastUpdateTime = Time.fixedTime;

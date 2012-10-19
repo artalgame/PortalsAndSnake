@@ -21,10 +21,14 @@ public class SnakeElement{
 		//var dist = Vector3.Distance(Element.transform.localPosition,TargetPoint);
 		//if(dist<=0.0001)
 		//{
-			Element.transform.localPosition = TargetPoint;
 			Speed = speed;
 			TargetPoint = target;
 			Direction = direction;
 		//}
 	}	
+	
+	public void UpdatePosition()
+	{
+		Element.transform.localPosition = TargetPoint;
+	}
 }
