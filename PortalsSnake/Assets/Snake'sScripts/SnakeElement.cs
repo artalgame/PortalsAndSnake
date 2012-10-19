@@ -14,13 +14,14 @@ public class SnakeElement{
 	
 	public void UpdateElement()
 	{
-		Element.transform.localPosition+=Direction*Speed*Time.deltaTime;
+		Element.transform.localPosition+=Direction*Speed*Time.fixedDeltaTime;
 	}
 	public void Update(float speed, Vector3 target,Vector3 direction)
 	{
 		//var dist = Vector3.Distance(Element.transform.localPosition,TargetPoint);
 		//if(dist<=0.0001)
 		//{
+			Element.transform.localPosition = TargetPoint;
 			Speed = speed;
 			TargetPoint = target;
 			Direction = direction;

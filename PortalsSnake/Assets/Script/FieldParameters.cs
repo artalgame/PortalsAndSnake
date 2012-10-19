@@ -15,6 +15,8 @@ public class FieldParameters : MonoBehaviour,IChangeFieldSizeListener,IRedactorA
 	public GameObject Line;
 	public List<GameObject> CellLines;
 	
+	
+	
 	// Use this for initialization
 	[ExecuteInEditMode]
 	void Start () 
