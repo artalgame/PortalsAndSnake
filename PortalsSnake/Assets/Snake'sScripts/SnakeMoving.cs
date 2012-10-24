@@ -57,6 +57,7 @@ public class SnakeMoving : MonoBehaviour {
 	
 	void ChangeDirection()
 	{
+		Vector3 previousDirection = Head.Direction;
 		if(Input.GetKeyDown(KeyCode.UpArrow))
 		{
 			Direction = new Vector3(0,1,0);
@@ -79,6 +80,11 @@ public class SnakeMoving : MonoBehaviour {
 		{
 			Direction = new Vector3(1,0,0);
 			IsChangeDirection = true;
+		}
+		
+		if(previousDirection+Direction == Vector3.zero)
+		{
+			Direction = previousDirection;	
 		}
 	}
 	
