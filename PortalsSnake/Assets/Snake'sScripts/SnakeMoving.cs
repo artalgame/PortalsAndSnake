@@ -116,4 +116,17 @@ public class SnakeMoving : MonoBehaviour {
 		}
 		
 	}
+	public void AddElement(GameObject obj)
+	{
+		var element = new SnakeElement
+			{
+				Direction = Direction,
+				Element = obj,
+				Speed = Speed
+			};
+		element.Direction = Body[Body.Count-1].Direction;
+		element.TargetPoint = Body[Body.Count-1].Element.transform.localPosition;
+	    Body.Add(element);
+		
+	}
 }

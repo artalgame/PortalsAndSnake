@@ -51,6 +51,9 @@
      <Compile Include="Assets\Script\Interfaces\RedactorAddObjectsState\IRedactorAddObjectOwner.cs" />
      <Compile Include="Assets\Script\Interfaces\RedactorAddObjectsState\IRedactorAddObjectState.cs" />
      <Compile Include="Assets\Script\Settings.cs" />
+     <Compile Include="Assets\Snake&apos;sScripts\AddNewElement.cs" />
+     <Compile Include="Assets\Snake&apos;sScripts\Element.cs" />
+     <Compile Include="Assets\Snake&apos;sScripts\Head.cs" />
      <Compile Include="Assets\Snake&apos;sScripts\SnakeElement.cs" />
      <Compile Include="Assets\Snake&apos;sScripts\SnakeMoving.cs" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
